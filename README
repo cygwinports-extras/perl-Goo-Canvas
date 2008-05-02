@@ -3,27 +3,25 @@ perl-Goo-Canvas
 Perl bindings for the GooCanvas cairo-based GTK+ canvas widget.
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  gdk-pixbuf2-2.10.14-1
-  glib2-2.12.13-1
-  goocanvas-0.9-1
-  gtk2-x11-2.10.14-1
-  libcairo2-1.4.10-1
-  perl-5.8.8-4
-  perl-Cairo-1.042-1
-  perl-Glib-1.144-1
-  perl-Gtk2-1.146-1
+  cygwin-1.5.25-11
+  gdk-pixbuf2-2.12.9-1
+  glib2-2.14.6-1
+  goocanvas-0.10-1
+  gtk2-x11-2.12.9-1
+  libcairo2-1.4.14-1
+  perl-5.10.0-3
+  perl-Cairo-1.045-1
+  perl-Glib-1.182-1
+  perl-Gtk2-1.182-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.24-2
   binutils-20060817-1
-  cygport-0.3.6-1
+  cygport-0.3.9-1
   gcc-core-3.4.4-3
   make-3.81-1
-  perl-5.8.8-4
-  perl-ExtUtils-Depends-0.205-1
-  perl-ExtUtils-PkgConfig-1.07-1
+  perl-ExtUtils-Depends-0.300-1
+  perl-ExtUtils-PkgConfig-1.11-1
 
 Canonical website:
   http://search.cpan.org/dist/Goo-Canvas/
@@ -34,63 +32,61 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack perl-Goo-Canvas-0.04-X-src.tar.bz2
+  unpack perl-Goo-Canvas-0.05-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./perl-Goo-Canvas-0.04-X.cygport all
+  cygport ./perl-Goo-Canvas-0.05-X.cygport all
 
 This will create:
-  /usr/src/perl-Goo-Canvas-0.04-X-src.tar.bz2
-  /usr/src/perl-Goo-Canvas-0.04-X.tar.bz2
+  /usr/src/perl-Goo-Canvas-0.05-X-src.tar.bz2
+  /usr/src/perl-Goo-Canvas-0.05-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
-  /etc/postinstall/perl-Goo-Canvas.sh
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Goo/Cairo/Matrix.pod
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Goo/Cairo/Pattern.pod
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Goo/Canvas.pm
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Goo/Canvas.pod
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Goo/Canvas/Bounds.pod
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Goo/Canvas/Ellipse.pod
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Goo/Canvas/EllipseModel.pod
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Goo/Canvas/Group.pod
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Goo/Canvas/GroupModel.pod
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Goo/Canvas/Image.pod
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Goo/Canvas/ImageModel.pod
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Goo/Canvas/Install/Files.pm
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Goo/Canvas/Install/goocanvas-perl-autogen.h
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Goo/Canvas/Install/goocanvas-perl-version.h
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Goo/Canvas/Install/goocanvas-perl.h
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Goo/Canvas/Install/goocanvas-perl.typemap
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Goo/Canvas/Install/goocanvas.typemap
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Goo/Canvas/Item.pod
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Goo/Canvas/ItemModel.pod
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Goo/Canvas/ItemSimple.pod
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Goo/Canvas/LineDash.pod
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Goo/Canvas/Path.pod
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Goo/Canvas/PathModel.pod
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Goo/Canvas/Points.pod
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Goo/Canvas/Polyline.pod
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Goo/Canvas/PolylineModel.pod
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Goo/Canvas/Rect.pod
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Goo/Canvas/RectModel.pod
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Goo/Canvas/Style.pod
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Goo/Canvas/Table.pod
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Goo/Canvas/TableModel.pod
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Goo/Canvas/Text.pod
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Goo/Canvas/TextModel.pod
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Goo/Canvas/Widget.pod
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Goo/Canvas/index.pod
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Goo/Canvas/.packlist
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Goo/Canvas/Canvas.bs
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Goo/Canvas/Canvas.dll
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Goo/Canvas/libCanvas.dll.a
-  /usr/share/doc/Cygwin/perl-Goo-Canvas-0.04.README
-  /usr/share/doc/perl-Goo-Canvas-0.04/Changes
-  /usr/share/doc/perl-Goo-Canvas-0.04/README
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Goo/Cairo/Matrix.pod
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Goo/Cairo/Pattern.pod
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Goo/Canvas.pm
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Goo/Canvas.pod
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Goo/Canvas/Bounds.pod
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Goo/Canvas/Ellipse.pod
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Goo/Canvas/EllipseModel.pod
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Goo/Canvas/Group.pod
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Goo/Canvas/GroupModel.pod
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Goo/Canvas/Image.pod
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Goo/Canvas/ImageModel.pod
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Goo/Canvas/Install/Files.pm
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Goo/Canvas/Install/goocanvas-perl-autogen.h
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Goo/Canvas/Install/goocanvas-perl-version.h
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Goo/Canvas/Install/goocanvas-perl.h
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Goo/Canvas/Install/goocanvas-perl.typemap
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Goo/Canvas/Install/goocanvas.typemap
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Goo/Canvas/Item.pod
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Goo/Canvas/ItemModel.pod
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Goo/Canvas/ItemSimple.pod
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Goo/Canvas/LineDash.pod
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Goo/Canvas/Path.pod
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Goo/Canvas/PathModel.pod
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Goo/Canvas/Points.pod
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Goo/Canvas/Polyline.pod
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Goo/Canvas/PolylineModel.pod
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Goo/Canvas/Rect.pod
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Goo/Canvas/RectModel.pod
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Goo/Canvas/Style.pod
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Goo/Canvas/Table.pod
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Goo/Canvas/TableModel.pod
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Goo/Canvas/Text.pod
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Goo/Canvas/TextModel.pod
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Goo/Canvas/Widget.pod
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Goo/Canvas/index.pod
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Goo/Canvas/.packlist
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Goo/Canvas/Canvas.bs
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Goo/Canvas/Canvas.dll
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Goo/Canvas/libCanvas.dll.a
+  /usr/share/doc/perl-Goo-Canvas-0.05/Changes
+  /usr/share/doc/perl-Goo-Canvas-0.05/README
   /usr/share/man/man3/Goo.Cairo.Matrix.3pm.gz
   /usr/share/man/man3/Goo.Cairo.Pattern.3pm.gz
   /usr/share/man/man3/Goo.Canvas.3pm.gz
@@ -119,11 +115,13 @@ Files included in the binary package:
   /usr/share/man/man3/Goo.Canvas.TextModel.3pm.gz
   /usr/share/man/man3/Goo.Canvas.Widget.3pm.gz
   /usr/share/man/man3/Goo.Canvas.index.3pm.gz
-  /usr/share/perl/cygwin-pods/5.8/Goo-Canvas.pod
 
 ------------------
 
 Port Notes:
+
+----- version 0.05-1 -----
+Version bump.
 
 ----- version 0.04-1 -----
 Initial release for Cygwin.
