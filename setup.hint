@@ -1,4 +1,4 @@
 category: Perl Gnome
-requires: cygwin glib2 gdk-pixbuf2 gtk2-x11 goocanvas libcairo2 perl perl-Cairo perl-Glib perl-Gtk2
+requires: glib2 gdk-pixbuf2 gtk2-x11 goocanvas libcairo2 perl perl-Cairo perl-Glib perl-Gtk2
 sdesc: "Perl GooCanvas bindings"
 ldesc: "Perl bindings for the GooCanvas cairo-based GTK+ canvas widget."
